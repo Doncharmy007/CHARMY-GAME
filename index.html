@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Startup Game Revenue PRO</title>
+
+<style>
+body {
+  font-family: Arial;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+}
+
+#target {
+  width:60px;
+  height:60px;
+  background:red;
+  border-radius:50%;
+  position:absolute;
+}
+
+button {
+  padding:10px;
+  margin:5px;
+}
+
+#ad-box {
+  margin-top:20px;
+  padding:10px;
+  background:#1e293b;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎮 Startup Game PRO</h1>
+
+<button onclick="startGame()">Start</button>
+<button onclick="showRewardAd()">📺 Watch Reward Ad</button>
+
+<p>Coins: <span id="coins">0</span></p>
+<p>Session: <span id="session">0</span>s</p>
+
+<div id="target"></div>
+
+<!-- ADSTERA BANNER -->
+<div id="ad-box">
+  <script type="text/javascript">
+    atOptions = {
+      'key': 'YOUR_ADSTERA_KEY',
+      'format': 'iframe',
+      'height': 250,
+      'width': 300,
+      'params': {}
+    };
+  </script>
+  <script src="//www.highperformanceformat.com/YOUR_SCRIPT.js"></script>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+  </html>
